@@ -21,5 +21,12 @@ PEOPLE = {
     }
 }
 
-def read():
+def get_all():
+    """
+    This function gets all the records of people.
+    Endpoint: /api/people
+
+    :return:    json string list of people
+    """
+    
     return [PEOPLE[key] for key in sorted(PEOPLE.keys())]

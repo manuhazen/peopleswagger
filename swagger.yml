@@ -12,7 +12,7 @@ basePath: "/api"
 paths: 
   /people:
     get:
-      operationId: "people.read"
+      operationId: "people.get_all"
       tags: 
         - "People"
       summary: "The people who belongs to this API"

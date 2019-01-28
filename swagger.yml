@@ -1,0 +1,32 @@
+swagger: '2.0'
+info:
+  description: This is the swagger file for this API
+  version: 1.0.0
+  title: Swagger REST API
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+basePath: "/api"
+
+paths: 
+  /people:
+    get:
+      operationId: "people.read"
+      tags: 
+        - "People"
+      summary: "The people who belongs to this API"
+      description: "Read the full list of people"
+      responses:
+        200:
+          description: "Successfull read people list operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                fname:
+                  type: "string"
+                lname: 
+                  type: "string"
+                timestamp:
+                  type: "string"
